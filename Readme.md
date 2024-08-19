@@ -268,3 +268,10 @@ Decimal('0.0')
 >>> myFrac
 //
 Fraction(2, 7)
+
+# STRING
+
+repr() provides a string representation suitable for debugging,
+str() provides a more user-friendly string representation,
+and 
+print() is a function for outputting text or values to the console, typically using str() for the conversion.
