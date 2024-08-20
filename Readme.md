@@ -385,25 +385,31 @@ car_types.pop("Hatchabck")
 'Compact'
 
 > > > car_types
-//
-> > > {'Sedan': 'Comfort', 'SUV': 'Offroad', 'Hatchback': 'Compact'}  
+> > > //
+> > > {'Sedan': 'Comfort', 'SUV': 'Offroad', 'Hatchback': 'Compact'}
 
 > > > car_types.popitem()
-//
+> > > //
 > > > ('Hatchback', 'Compact')
 
 > > > car_types
-//
+> > > //
 > > > {'Sedan': 'Comfort', 'SUV': 'Offroad'}
 
 > > > del car_types["SUV"] deletes the given key value
 
 > > > car_types
-//
+> > > //
 > > > {'Sedan': 'Comfort'}
 
 > > > car_types_copy = car_types.copy()
 
 > > > car_types_copy
-//
+> > > //
 > > > {'Sedan': 'Comfort'}
+
+> > > squared_num = {x: x\*\*2 for x in range(5)}
+
+> > > squared_num
+//
+> > > {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
