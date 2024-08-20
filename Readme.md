@@ -318,10 +318,92 @@ this is how we can convert a list to string type
 > > > //
 > > > bitan, sonia, pudding
 
-raw string is used to avoid unicode characters
+### Raw string is used to avoid unicode characters
 
 family_path = "c:\bitan\sonia\pudding"
 error
 
 family_path = r"c:\bitan\sonia\pudding"
 no error prints the correct output
+
+to print square of numbers in the given range we can use the below one line code
+
+> > > squared_nums = [x**2 for x in range(5)]
+
+> > > squared_nums
+> > > //
+> > > [0, 1, 4, 9, 16]
+
+# Dictionaries
+
+    Key - Value pairs
+    Order does not matter here
+
+> > > car_types
+> > > //
+> > > {'Sedan': 'Comfort', 'SUV': 'Offroad', 'Hatchback': 'Family'}
+
+> > > car_types["SUV"]
+> > > //
+> > > 'Offroad'
+
+> > > car_types.get("SUV")
+> > > //
+> > > 'Offroad'
+
+> > > car_types["Hatchabck"] = "Compact"
+
+> > > car_types
+> > > //
+> > > {'Sedan': 'Comfort', 'SUV': 'Offroad', 'Hatchback': 'Family', 'Hatchabck': 'Compact'}
+
+> > > car_types["Hatchback"] = "Compact"
+
+> > > car_types
+> > > //
+> > > {'Sedan': 'Comfort', 'SUV': 'Offroad', 'Hatchback': 'Compact', 'Hatchabck': 'Compact'}
+
+> > > for car in car_types:
+> > > ... print(car)
+> > > ...
+> > > //
+> > > Sedan
+> > > SUV
+> > > Hatchback
+> > > Hatchabck
+
+> > > for key, value in car_types.items():
+> > > ... print(key, value)
+> > > ...
+> > > //
+> > > Sedan Comfort
+> > > SUV Offroad
+> > > Hatchback Compact
+> > > Hatchabck Compact
+
+car_types.pop("Hatchabck")
+'Compact'
+
+> > > car_types
+//
+> > > {'Sedan': 'Comfort', 'SUV': 'Offroad', 'Hatchback': 'Compact'}  
+
+> > > car_types.popitem()
+//
+> > > ('Hatchback', 'Compact')
+
+> > > car_types
+//
+> > > {'Sedan': 'Comfort', 'SUV': 'Offroad'}
+
+> > > del car_types["SUV"] deletes the given key value
+
+> > > car_types
+//
+> > > {'Sedan': 'Comfort'}
+
+> > > car_types_copy = car_types.copy()
+
+> > > car_types_copy
+//
+> > > {'Sedan': 'Comfort'}
